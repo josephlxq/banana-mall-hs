@@ -1,5 +1,5 @@
 import { NextRequest } from "next/server";
-import { analyzeProject } from "@/lib/services/analyze-service";
+import { analyzeProject } from "@/lib/services/analysis-service";
 import { handleRouteError, ok } from "@/lib/utils/route";
 
 export async function POST(request: NextRequest, context: { params: { id: string } }) {
